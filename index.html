@@ -1,6 +1,131 @@
-<html>
-  <head></head>
-  <body>
-  <h1>HOLA MUNDO</h1>
-  </body>
-  </html> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!--el style dentro de head me configura el css para mis elementos table th y td , border me da doble borde y el collapse lo vuelve uno solo y el padding  de 10px me ese espacio a los bordes -->
+	<style>
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			padding: 10px;
+		}
+
+		th {
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>HOLA MUNDO</h1>
+	<hr>
+	<a href="https://youtu.be/HDKub1r_ZG8" target="_blank">
+		<img src="IMAGENES/Ale.jpg"> </a> <!-- al poner el enlace y como nombre del enlace la imagen al tocar la imagen nos lleva por el target="_blank" al enlace pero en otra pestaña--> 
+  <hr>
+  <img src="IMAGENES/Granchacho.jpg" stylen width="200px" alt="Imagen Chaco">
+  <h2>Subtitulos</h2>
+   <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/BF0D/production/_106090984_2e39b218-c369-452e-b5be-d2476f9d8728.jpg" height="100px" alt="Imagen Avenger">
+
+  <p>Aqui probaremos como nos presenta los parrafos en un nuestro repo</p>
+  <a href="https://youtu.be/HDKub1r_ZG8" target="_blank">Pagina de Ale</a> <br>
+  <br>
+ <img src="https://ichef.bbci.co.uk/news/800/cpsprodpb/BF0D/production/_106090984_2e39b218-c369-452e-b5be-d2476f9d8728.jpg" width="500px" alt="Imagen Avenger">
+ 
+<!--aqui puedo poner comentarios varios que no se veran en la pag-->
+
+ <p title="hola">Lorem ipsum dolor sit amet consectetur adipisicing. 
+   Nisi et <b> quidem sequi.
+      <del>Asperiores</del>
+       et quo iusto ipsum non temporibus quaerat rerum,</b> suscipit, magnam beatae id modi  vero
+          <mark> laudantium?</mark>  </p><br>
+
+   <p>Aqui resaltaremos palabra en estilo <i>cursiva</i> y en estilo tambien <em> cursiva resaltado</em> </p>
+
+  <table style="width: 100%"> <!--el width 100% hacen q la table ocupe todo el ancho d nuestra pagina-->
+
+    <tr>
+      <th>CATEGORIA</th>
+      <th>NOMBRE</th>
+      <th>PUNTAJE</th>
+    </tr>
+    
+    <tr>
+      <td>Historia</td>
+      <td>Juan</td>
+      <td>80</td>
+    </tr>
+
+    <tr>
+      <td>Historia</td>
+      <td>Noelia</td>
+      <td>75</td>
+    </tr>
+
+<tr>
+      <td>Cultura</td>
+      <td>Maria</td>
+      <td>75</td>
+    </tr>
+  </table>
+<br>
+<br>
+<!-- FORMULARIOSSSSS casillas -->
+
+<form>
+  NOMBRE: <br>
+  <input type="text" name= "firstname"><br>
+  APELLIDO: <br>
+  <input type="text" name="lastname"> 
+</form>
+<br>
+<br>
+<!-- FORMULARIOSSSSS button -->
+<form>
+  <input type="radio" name="gender" value="male" checked> Hombre <br>
+  <input type="radio" name="gender" value="female" checked> Mujer <br>
+  <input type="radio" name="gender" value="other" checked> Otro <br>
+</form>
+<br>
+<hr>
+<!-- formulariossss boton submit para enviar la info con el atributo action y form-handler.php es el url a donde se mandan los datos-->
+<!-- fieldset recuadra y el legend le agregra el titulo-->
+<form action="/form-handler.php">
+  <fieldset>
+    <legend> Informacion Personal</legend>
+    NOMBRE: <br>
+    <input type="text" name= "firstname"><br>
+    APELLIDO: <br>
+    <input type="text" name="lastname"> <br><br>
+    <input type="submit" value="Enviar">
+  </fieldset>
+</form>
+
+<br>
+<br>
+
+<!-- para el label ademas de poner lo q dice hay q poner en el selec el id de donde quiero q saque ese color a que elemento de donde relaciona ese dato  se refiere por si son muchos-->
+<form>
+  <fieldset>
+    <br>
+    <label for="color">Elige un color</label>
+    <select id="color" name"="autos">
+      <option>Rojo</option>
+      <option>Negro</option>
+      <option>Amarillo</option>
+      <option>Azul</option>
+    </select>
+    <br>
+  </fieldset>
+</form>
+</body>
+
+</html>
